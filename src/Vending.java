@@ -103,7 +103,7 @@ public class Vending extends Frame {
 			menu_order.add(close);
 			
 			
-			//*******************메뉴 이벤트*********************//
+			//*******************Menu Event*********************//
 			
 			for(int i=0; i<menu.length; i++){
 				int j =i;
@@ -161,7 +161,7 @@ public class Vending extends Frame {
 			}
 			
 
-			//************ 하단 메뉴 이벤트(주문, 초기화, 닫기) ************//
+			//************ Lower Maenu Event (Check Out, Reset, Quit)************//
 			order.addActionListener(new ActionListener(){
 				public void actionPerformed(ActionEvent e) {
 					JOptionPane.showMessageDialog(f, "Your order is confirmed. \n Thank you! \n Total : "+ formatter.format(all) +"won.");
